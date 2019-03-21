@@ -10,8 +10,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import scale
 
 
-data = pd.read_csv("/Users/yiqunzhang/Desktop/MyOwnProject/Santander/sampled.csv")
-data2 = pd.read_csv("/Users/yiqunzhang/Desktop/MyOwnProject/Santander/sampled2.csv")
+data = pd.read_csv("/*/sampled.csv")
+data2 = pd.read_csv("/*/sampled2.csv")
 X = data.drop(['Unnamed: 0', 'Unnamed: 0.1', 'ID_code', 'target'],axis= 1)
 Y = data["target"]
 X_test = data2.drop(['Unnamed: 0', 'Unnamed: 0.1', 'ID_code', 'target'],axis= 1)

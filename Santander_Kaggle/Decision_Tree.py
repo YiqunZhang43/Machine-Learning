@@ -2,9 +2,9 @@ from sklearn import tree
 import pandas as pd
 from sklearn.metrics import classification_report
 import os
-os.chdir("/Users/yiqunzhang/Desktop/MyOwnProject/Santander/")
-data = pd.read_csv("/Users/yiqunzhang/Desktop/MyOwnProject/Santander/sampled.csv")
-data2 = pd.read_csv("/Users/yiqunzhang/Desktop/MyOwnProject/Santander/sampled2.csv")
+os.chdir("/*/")
+data = pd.read_csv("/*/sampled.csv")
+data2 = pd.read_csv("/*/sampled2.csv")
 X = data.drop(['Unnamed: 0', 'Unnamed: 0.1', 'ID_code', 'target'],axis= 1)
 Y = data["target"]
 X_test = data2.drop(['Unnamed: 0', 'Unnamed: 0.1', 'ID_code', 'target'],axis= 1)
